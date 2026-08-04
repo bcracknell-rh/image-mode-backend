@@ -1,4 +1,5 @@
-FROM quay.io/kubealex/image-mode-baseos:latest
+ARG REGISTRY=quay.io/kubealex
+FROM ${REGISTRY}/image-mode-baseos:latest
 
 ARG DB_HOST=localhost
 
