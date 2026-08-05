@@ -2,7 +2,7 @@ FROM quay.io/kubealex/image-mode-baseos:latest
 
 ARG DB_HOST=localhost
 
-RUN dnf install -y nodejs npm && dnf clean all
+RUN dnf install -y nodejs npm c-ares && dnf clean all
 
 COPY package.json package-lock.json* /usr/share/train-tickets/backend/
 RUN cd /usr/share/train-tickets/backend && npm install --production
