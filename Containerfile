@@ -1,4 +1,4 @@
-FROM quay.io/kubealex/image-mode-baseos:latest
+FROM quay.io/bcrackne/image-mode-baseos:latest
 
 ARG DB_HOST=localhost
 
